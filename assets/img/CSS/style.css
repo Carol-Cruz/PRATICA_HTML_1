@@ -1,20 +1,24 @@
 
 #titulo1{
 
-  color: blue;
+  color: #ffffff;
   text-align: center;
 
 }
 
 #titulo2{
 
-  color: blue;
+  color: rgb(255, 255, 255);
   text-align: center;
 
 }
 
+h1{
+  color: #ffffff;
+}
+
 p{
-  color: rgb(3, 154, 255);
+  color: rgb(255, 255, 255);
   text-align: left;
   font-size: 22px;
 
@@ -23,20 +27,8 @@ p{
 
 .body{
 
-    background-color: #41008b;
-    -webkit-animations: carol 300s;
-    animation: carol 300s;
-  }
-      @keyframes carol {
-
-   0%{background: #9400D3;}
-  20%{background: #FF00FF;}
-  40%{background: #A020F0;}
-  60%{background: #4B0082;}
-  80%{background: #7B68EE;}
-  100%{background: #8A2BE2;}
-
-  }
+    background-color: #000000;
+}
 
   .container{
     display: flex;
@@ -59,13 +51,18 @@ p{
 
   #menu li a {
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-size: 30px;
   }
 
   #menu li a:hover{
-    color: aqua;
+    color: rgb(0, 0, 0);
   }
+
+  form{
+    color: #ffffff;
+  }
+
 
   .padding{
     padding: 30px;
@@ -77,19 +74,8 @@ p{
  
   .bodycontato{
 
-    background-color: #41008b;
-    -webkit-animations: carol 300s;
-    animation: carol 300s;
-  }
-      @keyframes carol {
-
-   0%{background: #9400D3;}
-  20%{background: #FF00FF;}
-  40%{background: #A020F0;}
-  60%{background: #4B0082;}
-  80%{background: #7B68EE;}
-  100%{background: #8A2BE2;}
-
+    background-color: #000000;
+  
   }
 
   #menucontato li {
@@ -99,10 +85,60 @@ p{
 
   #menucontato li a {
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-size: 30px;
   }
 
   #menucontato li a:hover{
-    color: aqua;
+    color: rgb(255, 255, 255);
   }
+
+  footer {
+
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px 0;
+    
+  }
+
+ .social-links {
+  display: flex;
+  justify-content: center; 
+  gap: 10px
+
+  }
+
+ .social-links img {
+   display: flex;
+   justify-content: center ;
+    height: 40px;
+    width: auto;
+    
+  }
+
+  .rodape{
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+  /*PARA PEQUENOS DISPOSITIVOS*/
+
+  @media (max-width: 768px) {
+    .container,.container2 {
+       flex-direction: column;
+     }
+   
+     #menu li, #menucontato li {
+       padding: 10px;
+     }
+   
+     #menu li a, #menucontato li a {
+       font-size: 24px;
+     }
+   
+    .social-links {
+       flex-direction: column;
+     }
+   }
+   
