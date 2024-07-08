@@ -11,31 +11,42 @@
     <ul id="menucontato">
         <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">contato</a></li>
+
     </ul>
 
     <h1>Entre em contato comigo</h1>
 
     <form>
-        <label for="nome">Nome:
-            <input type="text" id="nome"> <br>
-        </label>
+        <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" onkeyup="validaNome()"> 
+        <div id="txtNome"></div>
+    
         <br>
-        <br>
-        <label for="email">E-mail: 
-            <input type="email" id="email"> <br>
-        </label>
-        <br>
+        <label for="email">E-mail:   </label> <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+
+      
         <br>
         <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <button>Enviar</button>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+         <br>
+         <br>
+        <button onclick="enviar()">Enviar</button>
     </form>
 
     <footer>
         <div class="social-links">
           <a href="https://github.com/Carol-Cruz" target="_blank"><img src="https://sachadev.fr/img/github2.png" alt="GitHub"></a>
+        <ul>
+            <li><a class="rodape" href="privacidade.html">Política de privacidade</a></li>
+
+        </ul>
         </div>
         <p class="rodape">&copy; 2024 - Todos os direitos reservados</p>
-    </footer>   
+    </footer>  
+    
+    <script src="assets/img/js/script.js"></script>
 </body>
 </html>
